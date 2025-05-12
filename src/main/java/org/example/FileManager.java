@@ -19,7 +19,7 @@ public class FileManager {
     /**
      * Reads library items from an external CSV file to initialize the inventory
      */
-    private static List<LibraryItem> initInventory(String path) {
+    public static List<LibraryItem> initInventory(String path) {
         List<LibraryItem> items = new ArrayList<>();
         File file = new File(path);
 
@@ -48,7 +48,7 @@ public class FileManager {
     /**
      * Reads borrowing log lines from file.
      */
-    private static List<String> initBorrowLogs(String path) {
+    public static List<String> initBorrowLogs(String path) {
         List<String> logs = new ArrayList<>();
         File file = new File(path);
 

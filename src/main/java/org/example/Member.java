@@ -45,4 +45,13 @@ public class Member extends User implements Comparable<Member> {
     public int compareTo(Member o) {
         return this.borrowedItems.size() - o.borrowedItems.size();
     }
+
+    public List<LibraryItem> getBorrowedItems() {
+        return borrowedItems;
+    }
+
+    public void setBorrowedItems(List<LibraryItem> borrowedItems) {
+        this.borrowedItems = borrowedItems;
+    }
+
 }
